@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoSampleAppHost", "src\TodoSampleAppHost\TodoSampleAppHost.csproj", "{0238E461-3C8A-40AC-A4D0-352C34FCB11B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoSample", "TodoSample\TodoSample.csproj", "{0012788D-08FD-481B-838F-4249D5B17BED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoSample", "src\TodoSample\TodoSample.csproj", "{0012788D-08FD-481B-838F-4249D5B17BED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoSampleMessageHandler", "TodoSampleMessageHandler\TodoSampleMessageHandler.csproj", "{CE12BEDB-EC93-4D41-BD7F-87649208A386}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoSampleMessageHandler", "src\TodoSampleMessageHandler\TodoSampleMessageHandler.csproj", "{CE12BEDB-EC93-4D41-BD7F-87649208A386}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeMessagingFramework", "SomeMessagingFramework\SomeMessagingFramework.csproj", "{EF247CB6-A5F9-4F86-B3AF-E4311723C4DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeMessagingFramework", "src\SomeMessagingFramework\SomeMessagingFramework.csproj", "{EF247CB6-A5F9-4F86-B3AF-E4311723C4DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
