@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SomeMessagingFramework\SomeMessagingFramework.csproj" />
+    <ProjectReference Include="..\TodoSample\TodoSample.csproj" />
+  </ItemGroup>
+
+</Project>
