@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TodoSample;
 
 namespace TodoSampleMessageHandler
 {
@@ -10,7 +11,8 @@ namespace TodoSampleMessageHandler
         {
             return new TodoList
             {
-                Name = command.Name
+                Name = command.Name,
+                TodoItems = command.TodoList.TodoItems
             };
         }
     }
