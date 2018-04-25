@@ -9,11 +9,13 @@ namespace TodoSampleMessageHandler
 
     public class CreateListMessageHandler : IMessageHandler<CreateListCommand>
     {
+        private TodoSampleApplicationService todoSampleApplicationService = new TodoSampleApplicationService(new TodoDataAccess());
+
         public void HandleMessage(MessageHandlerContext<CreateListCommand> messageHandlerContext)
         {
             var todoList = new MapTodoList().Map(messageHandlerContext.Message);
-            TodoDataAccess todoDataAccess = new TodoDataAccess();
-            todoDataAccess.CreateTodoList(todoList);
+
+            todoSampleApplicationService.CreateTodoList(todoList);
         }
     }
 }
