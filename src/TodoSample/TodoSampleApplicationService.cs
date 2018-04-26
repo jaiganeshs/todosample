@@ -16,12 +16,23 @@ namespace TodoSample
             this.todoDataAccess = todoDataAccess;
         }
         
-        public void CreateTodoList(TodoList todoList)
+        public void CreateTodoList(CreateTodoListDto createTodoListDto)
         {
+            var todoList = new TodoList(createTodoListDto.Name);
             // validate
             // set the data in the entity
             // save the data
             todoDataAccess.CreateTodoList(todoList);
         }
+
+        public void ChangeListName(int listId, string newName)
+        {
+
+        }
+    }
+
+    public class CreateTodoListDto
+    {
+        public string Name { get; set; }
     }
 }

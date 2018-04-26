@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TodoSample;
 
 namespace TodoSampleMessageHandler
 {
     public class MapTodoList
     {
-        public TodoList Map(CreateListCommand command)
+        public CreateTodoListDto Map(CreateListCommand command)
         {
-            return new TodoList
+            return new CreateTodoListDto
             {
                 Name = command.Name
             };
