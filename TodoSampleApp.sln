@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoSampleAppHost", "src\To
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoSample", "src\TodoSample\TodoSample.csproj", "{0012788D-08FD-481B-838F-4249D5B17BED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoSampleMessageHandler", "src\TodoSampleMessageHandler\TodoSampleMessageHandler.csproj", "{CE12BEDB-EC93-4D41-BD7F-87649208A386}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoSampleMessageHandler", "src\TodoSampleMessageHandler\TodoSampleMessageHandler.csproj", "{CE12BEDB-EC93-4D41-BD7F-87649208A386}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeMessagingFramework", "src\SomeMessagingFramework\SomeMessagingFramework.csproj", "{EF247CB6-A5F9-4F86-B3AF-E4311723C4DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SomeMessagingFramework", "src\SomeMessagingFramework\SomeMessagingFramework.csproj", "{EF247CB6-A5F9-4F86-B3AF-E4311723C4DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoDataAccess", "ToDoDataAccess\ToDoDataAccess.csproj", "{6D3837A0-18DF-40D1-8415-0218785762B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EF247CB6-A5F9-4F86-B3AF-E4311723C4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF247CB6-A5F9-4F86-B3AF-E4311723C4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF247CB6-A5F9-4F86-B3AF-E4311723C4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3837A0-18DF-40D1-8415-0218785762B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3837A0-18DF-40D1-8415-0218785762B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3837A0-18DF-40D1-8415-0218785762B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3837A0-18DF-40D1-8415-0218785762B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

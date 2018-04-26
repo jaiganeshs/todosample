@@ -12,8 +12,8 @@ namespace TodoSampleMessageHandler
         public void HandleMessage(MessageHandlerContext<CreateListCommand> messageHandlerContext)
         {
             var todoList = new MapTodoList().Map(messageHandlerContext.Message);
-            TodoDataAccess todoDataAccess = new TodoDataAccess();
-            todoDataAccess.CreateTodoList(todoList);
+            UpsertService upsertService = new UpsertService();
+            upsertService.CreateOrUpdateToDoList(todoList);
         }
     }
 }
