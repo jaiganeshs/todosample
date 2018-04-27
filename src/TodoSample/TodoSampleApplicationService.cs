@@ -6,14 +6,14 @@ namespace TodoSample
 {
     public class TodoSampleApplicationService
     {
-        private readonly TodoDataAccess todoDataAccess;
+        private readonly TodoRepository todoRepository;
 
-        public TodoSampleApplicationService(TodoDataAccess todoDataAccess)
+        public TodoSampleApplicationService(TodoRepository todoRepository)
         {
-            if (null == todoDataAccess)
-                throw new ArgumentNullException(nameof(todoDataAccess));
+            if (null == todoRepository)
+                throw new ArgumentNullException(nameof(todoRepository));
 
-            this.todoDataAccess = todoDataAccess;
+            this.todoRepository = todoRepository;
         }
         
         public void CreateTodoList(CreateTodoListDto createTodoListDto)
@@ -22,7 +22,7 @@ namespace TodoSample
             // validate
             // set the data in the entity
             // save the data
-            todoDataAccess.CreateTodoList(todoList);
+            todoRepository.CreateTodoList(todoList);
         }
 
         public void ChangeListName(int listId, string newName)

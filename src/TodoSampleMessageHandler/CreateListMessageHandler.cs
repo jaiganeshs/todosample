@@ -9,7 +9,7 @@ namespace TodoSampleMessageHandler
 
     public class CreateListMessageHandler : IMessageHandler<CreateListCommand>
     {
-        private TodoSampleApplicationService todoSampleApplicationService = new TodoSampleApplicationService(new TodoDataAccess());
+        private TodoSampleApplicationService todoSampleApplicationService = new TodoSampleApplicationService(new TodoRepository());
 
         public void HandleMessage(MessageHandlerContext<CreateListCommand> messageHandlerContext)
         {
